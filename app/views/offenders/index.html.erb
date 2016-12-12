@@ -1,0 +1,7 @@
+<h1>Chicago Registered Sex Offenders</h1>
+<% @offenders.each do |offender| %>
+  <h2> <%= offender["last"]%>, <%= offender["first"] %> </h2>
+  <h3> <%= offender["gender"]%> </h3>
+  <h3> <%= offender["race"]%> </h3>
+  <h3> <%= offender["age"]%> </h3>
+<% end %>
